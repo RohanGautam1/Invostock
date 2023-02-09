@@ -1,21 +1,40 @@
+body {
+    font-family: Inter;
+}
+
 .bg-image {
+    position: relative;
     background-image: url('../Assets/back2.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 110%;
     width: 100%;
-    height: 36rem;
+    height: 40rem;
+    background-color: transparent linear-gradient(137deg) ;
+}
+
+.logoImg {
+    background: transparent url('img/logo-top.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
 .header {
-    font-size: 14px;
-    font-weight: 400;
+    position: absolute;
+    width: 100%;
+    font-size: .75rem;
+    font-weight: 300;
+    /* py-3 px-4 */
+    padding-left: 1.6rem;
+    padding-right: 1rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1rem;
     /* color: #FFFFFF !important; */
 }
+
+
 
 .navbar-nav {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 0.5rem;
-    --bs-nav-link-font-weight: ;
     --bs-nav-link-color: #ffffff !important;
     --bs-nav-link-hover-color: #ffffff;
     --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
@@ -26,8 +45,37 @@
     list-style: none;
 }
 
-.home {
-    margin-top: 6rem;
+.headerLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+}
+
+.tightSpreadsHead {
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size:3rem;
+    /* margin-left: .8rem; */
+}
+
+.tightSpreadsDiv {
+    position: absolute;
+    top: 8.5rem;
+    left: 18rem;
+
+}
+
+.timeText {
+    color: #FCC954;
+}
+
+.AlwaysPara {
+    position: relative;
+    left: 1.5rem;
+    font-size: 1.03rem;
+    font-weight: 100;
 }
 
 .roundedButton {
@@ -39,22 +87,44 @@
     background-color: #FCC954;
     padding-top: 0px !important;
     padding-bottom: 0px !important;
-    font-size: small !important;
-    font-weight: 500 !important;
-    border-radius: 4px;
+    font-size: .7rem !important;
+    font-weight: 600 !important;
+    border-radius: 3px;
 }
 
 .loginBtn {
     background-color: #FCC954;
-    font-size: small;
-    font-weight: 500;
+    font-size: .7rem;
+    font-weight: 700;
+    height: 2rem;
+    border-radius: 1rem;
+    padding-left: .9rem;
+    padding-right: .9rem;
+    
 }
 
 .SignupBtn {
     background-color: #4646A3;
-    font-size: small;
+    font-size: .7rem;
     font-weight: 500;
+    height: 2rem;
+    border-radius: 1rem;
+    padding-left: .9rem;
+    padding-right: .9rem;
 }
+
+.searchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: .1rem;
+    background-color: #00B074;
+
+}
+
 
 .loginBtn:hover {
     background-color: #fbbd2d;
@@ -64,9 +134,219 @@
     background-color: #3434a5;
 }
 
-.freeTrading {
-    background-color: #EFEFEF;
+.Cards {
+    position: absolute;
+    top: 17.2rem;
+    left: .5rem;
+   
 }
+
+.nextDay {
+    /* box-shadow: 0px 0px 2px #FFFFFF; */
+    border: 1px solid #FFFFFF30;
+    background: #ffffff00 !important;
+    border-radius: 18px;
+    opacity: 1;
+    backdrop-filter: blur(50px) !important;
+    -webkit-backdrop-filter: blur(50px) !important;
+    width: 30rem;
+    height: 15rem;
+}
+
+.pastDays {
+    /* box-shadow: 0px 0px 2px #FFFFFF; */
+    border: 1px solid #FFFFFF30;
+    background: #ffffff00 !important;
+    /* border: 1px solid #FFFFFF30; */
+    border-radius: 18px;
+    opacity: 1;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    width: 30rem;
+    height: 15rem;
+}
+
+.graph{
+    width: 27rem;
+    height: 8.5rem;
+}
+
+.graphText{
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+.forecastHead {
+    color: #FCC954;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.forcastText{
+    font-size: .7rem;
+    font-weight: 300;
+}
+.forcastData{
+    font-size: .7rem;
+    font-weight: 300;
+}
+
+.bullishBtn{
+    font-size: .8rem !important ;
+    height: 2.7rem;
+    width: 7rem;
+    background-color: #00B074;
+}
+
+.dateVersionDiv{
+    position: relative;
+}
+
+.modelVersion{
+    position: absolute;
+    bottom: .1rem;
+    right: .1rem;
+    font-size: .7rem;
+    font-weight: 200;
+    width: 10rem;
+}
+
+.modelText{
+    text-decoration: underline;
+}
+
+.getAccessText{
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+.getfreeAccess{
+    color: #FCC954;
+}
+
+.freeAccessIcon{
+    width: 5px;
+}
+
+.fa-angle-right{
+    color: #FCC954;
+    padding-top: 2px;
+}
+
+.discover{
+    position: absolute;
+    top: 38rem;
+    height: 3.3rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 16px #00000029;
+    color: black !important;
+}
+
+.discoverTextDiv{
+    display: flex;
+    position: relative;
+    background-color: #00B074;
+    color: #ffffff;
+    height: 3.3rem;
+}
+
+.discoverText{
+    position: absolute;
+    left: 11rem;
+    top: .8rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #ffffff;   
+}
+
+.discoverArrow{
+    position: absolute;
+    left: 18.2rem;
+    /* bottom: -.9rem; */
+    top: -1.15rem;
+    
+}
+
+.aroowIcon{
+    /* position: absolute; */
+    /* left: 1rem; */
+    /* bottom: -.9rem; */
+    color: #00B074;
+}
+
+.box.arrow-right:after {
+    content: " ";
+    position: absolute;
+    right: -20px;
+    /* top: 3px; */
+    /* height: rem; */
+    border-top: 26px solid transparent;
+    border-right: none;
+    border-left: 20px solid #00b074;
+    border-bottom: 26px solid transparent;
+  } 
+
+
+.discoverLinksDiv{
+    position: absolute;
+    height: 3.3rem;
+    text-decoration: n;
+    left: 26rem;
+    /* margin-right: 9rem; */
+    font-size: .8rem;
+
+}
+
+.discoverLinksRow{
+    height: 3.3rem;
+}
+
+.discoverLinksDiv a{
+    text-decoration: none;
+}
+
+.areYou{
+    font-weight: 700;
+    font-size: .8rem;
+}
+
+.discoverLink{
+    font-weight: 700;
+    font-size: .75rem;
+    color: #4646A3;
+}
+
+.fa-angle-right{
+    color: #4646A3;
+}
+
+.learn
+{
+    font-size: .4rem !important;
+    font-weight: 500 !important;
+}
+
+.freeTradingMainDiv{
+    margin-top: 5rem !important;
+}
+
+.freeTrading {
+    text-align: left;
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #041A28;
+    opacity: 1;
+}
+
+.tradingDesc {
+    line-height: 1.1rem;
+    font-size: .8rem;
+}
+
+
 
 @media (min-width: 992px) {
     .navbar-light {
@@ -103,16 +383,48 @@
     box-shadow: 0px 0px 16px #00000029;
     border-radius: 23px;
     opacity: 1;
-    width: 13rem;
-    height: 9rem;
+    width: 12rem;
+    height: 8rem;
+}
+
+.payCardBody {
+    position: relative;
 }
 
 .paycardText {
+    position: absolute;
     text-align: left;
-    font: normal normal normal 12px Inter;
+    font-size: .7rem;
     letter-spacing: 0px;
     color: #44475B;
     opacity: 1;
+    line-height: .9rem;
+    top: 4.5rem;
+
+}
+
+.payCardImg {
+    position: absolute;
+    height: 3rem;
+    width: 7rem;
+    left: 2.5rem;
+    top: 1.3rem;
+}
+
+.payCardImg-zerodha {
+    position: absolute;
+    height: 2.5rem;
+    width: 8rem;
+    left: 2rem;
+    top: 1.3rem;
+}
+
+.payCardImg-upStox {
+    position: absolute;
+    height: 1.9rem;
+    width: 6.5rem;
+    left: 2.5rem;
+    top: 1.7rem;
 }
 
 .slider .img {
@@ -131,9 +443,11 @@
 
 .cardBadge {
     background-color: #DADAED;
-    color: #4646A3 !important;
-    font-weight: 400;
-    /* margin-bottom: .8em; */
+    color: #5959AD !important;
+    font-weight: 500;
+    font-size: .6rem;
+    margin-bottom: .75rem;
+
 
 }
 
@@ -144,7 +458,7 @@
 
 .cardDesc {
     text-align: left;
-    font: normal normal normal 12px Inter;
+    font-size: .6rem;
     letter-spacing: 0px;
     color: #44475B;
     opacity: 1;
@@ -153,12 +467,14 @@
 
 .date {
     margin-bottom: 0px !important;
-    font-size: 12px;
+    font-size: .6rem;
+    font-weight: 400;
+    color: #4646A3;
 }
 
 .cardTitle {
     text-align: left;
-    font: normal normal small 18px Inter;
+    font-size: .75rem;
     font-weight: 700;
     letter-spacing: 0px;
     color: #041A28;
@@ -166,9 +482,11 @@
 }
 
 .loadMore {
-    text-align: left;
-    font: normal normal 600 28px/24px Inter;
-    letter-spacing: 0px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.1rem;
+    letter-spacing: .3px;
+    font-weight: 700;
     color: #242424;
     opacity: 1;
     text-decoration: none;
@@ -181,43 +499,43 @@
 .swiper {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .swiper-slide {
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
 
-/* / slider / */ 
+/* / slider / */
 
-.crypto-text{
+.crypto-text {
     text-align: left;
-color: #4646A3;
+    color: #4646A3;
 
 }
 
-.crypto-body{
-    background-color : #DADAED ;
-padding-left: 1rem;
-padding-right: 1rem;
-padding-top: 0.1rem !important;
-padding-bottom: 0.1rem !important;
-border-radius: 16px;
+.crypto-body {
+    background-color: #DADAED;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
+    border-radius: 16px;
 }
 
-.card-body{
+.card-body {
     text-align: start;
 }
 
