@@ -50,8 +50,8 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse headerLinks border" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-scroll ms-5 px-2 ps-4 border">
+          <div class="collapse navbar-collapse headerLinks" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-scroll ms-5 px-2">
               <li class="nav-item dropdown mx-1">
                 <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Intraday Trading <span><i class="fa fa-xs fa-light fa-chevron-down mx-1"></i></span>
@@ -129,6 +129,8 @@
               </button> -->
         </div>
         <div class="Cards d-flex justify-content-center align-items-top">
+          <div></div>
+          <div></div>
           <div class="nextDay p-4 pb-3 mx-2">
             <h6 class="forecastHead mt-2">Next Day Market Forecast</h6>
             <div class="row dateAndVersion">
@@ -184,65 +186,43 @@
             </div>
           </div>
           <div class="col-1 discoverArrow">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_r0fbtmkl.json" background="transparent"
-              speed="1" style="width: 90px; height: 90px;" loop autoplay></lottie-player>
+            <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_teldraaf.json" background="transparent"
+              speed="1" style="width: 90px; height: 90px;" loop autoplay></lottie-player> -->
+
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+              <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_r0fbtmkl.json"  background="transparent"  speed="1"  style="width: 90px; height: 90px;"  loop  autoplay></lottie-player>
           </div>
-          <div class="col-8 border border-primary discoverLinksDiv">
-            <div class="row d-flex align-items-center border discoverLinksRow">
-              <div class="col-3 areYou me-3">Are You Beginner?<br/><a class="discoverLink" href="">Learn <i class="fa fa-thin fa-angle-right fa-xs ms-1"></i></a></div>
-              <div class="col-3 areYou me-3">Are You Stock Trader?<br/><a class="discoverLink" href="">Build <i class="fa fa-thin fa-angle-right fa-xs ms-1"></i></a></div>
-              <div class="col-3 areYou">Are You Investor?<br/><a class="discoverLink" href="">Design for Wealth <i class="fa fa-thin fa-angle-right fa-xs ms-1"></i></a></div>
+          <div class="col-8 discoverLinksDiv">
+            <div class="row d-flex align-items-center discoverLinksRow">
+              <div class="col-3 areYou me-3">Are You Beginner?<br /><a class="discoverLink" href="">Learn <i
+                    class="fa fa-thin fa-angle-right fa-xs ms-1"></i></a></div>
+              <div class="col-3 areYou me-3">Are You Stock Trader?<br /><a class="discoverLink" href="">Build <i
+                    class="fa fa-thin fa-angle-right fa-xs ms-1"></i></a></div>
+              <div class="col-3 areYou">Are You Investor?<br /><a class="discoverLink" href="">Design for Wealth <i
+                    class="fa fa-thin fa-angle-right fa-xs ms-1"></i></a></div>
             </div>
           </div>
         </div>
       </div>
 
-
-      <!-- <div class="discover px-2 border border-2 ">
-        <div class="row border border-danger">
-          <div class="col-3 border discoverTextDiv d-flex">
-            <span class="border discoverText border m-auto">Discover</span>
-          </div>
-          <div class="col-9">
-            <div class="row">
-              <div class="col-4">
-                <h6>Are You Beginner?</h6>
-                <a class="discoverLinks" href="">Learn</a>
-              </div>
-              <div class="col-4">
-                <h6>Are You Stock Trader?</h6>
-                <a class="discoverLinks" href="">Build</a>
-              </div>
-              <div class="col-4">
-                <h6>Are You Investor?</h6>
-                <a class="discoverLinks" href="">Design for Wealth</a>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-      </div> -->
     </div>
-
-
 
     <!-- Free Trading -->
 
-    <div class="row mx-5 border border-danger freeTradingMainDiv">
+    <div class="row mx-5 freeTradingMainDiv">
       <div class="row justify-content-center">
-        <div class="col-7 border">
-          <div class="row">
-            <div class="px-3 d-flex flex-column align-items-start">
+        <div class="col-7">
+          <div class="row px-2">
+            <div class="d-flex flex-column align-items-start">
               <h1 class="freeTrading">FREE Trading Account</h1>
               <p class="text-start tradingDesc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia officia
                 dolor ab ipsum earum id molestias eum, quos eius exercitationem, reiciendis deserunt dolorem animi
                 doloribus!</p>
             </div>
-            <div class="row">
+            <div class="row payCardDiv">
               <div class="col-4">
-                <div class="card m-2 rounded-4 border-0 payCard">
+                <div class="card my-2 rounded-4 border-0 payCard">
                   <div class="card-body">
                     <img src="./Assets/paytm_money/paytm_money.png" class="payCardImg" alt="">
                     <p class="card-text paycardText mt-2">*Brokerage: Rs 15 per executed trade (Intraday & F&O)</p>
@@ -250,7 +230,7 @@
                 </div>
               </div>
               <div class="col-4">
-                <div class="card m-2 rounded-4 border-0 payCard">
+                <div class="card my-2 mx-1 rounded-4 border-0 payCard">
                   <div class="card-body">
                     <img src="./Assets/invostock-partner-zerodha/invostock-partner-zerodha.png"
                       class="payCardImg-zerodha" alt="">
@@ -259,7 +239,7 @@
                 </div>
               </div>
               <div class="col-4">
-                <div class="card m-2 rounded-4 border-0 payCard">
+                <div class="card my-2 ms-2 rounded-4 border-0 payCard">
                   <div class="card-body">
                     <img src="./Assets/Untitled-2/Untitled-2.png" class="payCardImg-upStox" alt="">
                     <p class="card-text paycardText mt-2">*Brokerage: Rs 15 per executed trade (Intraday & F&O)</p>
@@ -271,7 +251,7 @@
 
             <!-- Swiper/Slider Start -->
 
-            <div class="swiper mySwiper mb-5 mt-3">
+            <!-- <div class="swiper mySwiper mb-5 mt-3">
               <div class="swiper-wrapper mt-3">
 
 
@@ -326,10 +306,59 @@
 
               </div>
               <div class="swiper-pagination"></div>
+            </div> -->
+
+
+            <div class="swiper mySwiper my-5 blockChainCard">
+              <div class="swiper-wrapper mb-3">
+
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <img src="./Assets/blockchain/blockchain.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <div class="badge cardBadge px-3 rounded-4 mb-3">CRYPTOCURRENCY</div>
+                      <h6 class="card-text swiperHeading">What is loooorem blockchain and how to design a blockchain
+                        envionment?</h6>
+                      <p class="swiperPara">A blockchain is a decentralized technology system for digital ledger used
+                        for recording transactions across a network of computers/nodes. It is used to record and track
+                        digital assets, such as cryptoc....</p>
+                      <p class="date">January 24, 2023</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <img src="./Assets/blockchain/blockchain.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <span class="badge cardBadge px-3 rounded-4 mb-3">CRYPTOCURRENCY</span>
+                      <h6 class="card-text swiperHeading">What is blockchain and how to design a blockchain envionment?
+                      </h6>
+                      <p class="swiperPara">A blockchain is a decentralized technology system for digital ledger used
+                        for recording transactions across a network of computers/nodes. It is used to record and track
+                        digital assets, such as cryptoc...</p>
+                      <p class="date">January 24, 2023</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <img src="./Assets/blockchain/blockchain.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <span class="badge cardBadge px-3 rounded-4 mb-3">CRYPTOCURRENCY</span>
+                      <h6 class="card-text swiperHeading">What is lorem blockchain and how to design a blockchain
+                        envionment?</h6>
+                      <p class="swiperPara">A blockchain is a decentralized technology system for digital ledger used
+                        for recording transactions across a network of computers/nodes. It is used to record and track
+                        digital assets, such as cryptoc...</p>
+                      <p class="date">January 24, 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiperBullets mt-5 pt-5"></div>
             </div>
-
-
-
 
             <!-- Swiper/Slider End -->
 
@@ -339,7 +368,7 @@
 
 
             <div class="col-6 mt-2">
-              <img class="rounded-3" style="width: 19rem; height: 17.8rem;" src="./Assets/qwq.png" alt="">
+              <img class="rounded-3" style="width: 19rem; height: 17.5rem;" src="./Assets/qwq.png" alt="">
             </div>
             <div class="col-6 mt-2" style="height: 19rem;">
               <div class="card text-start border-0 cardDiv" style="width: 19rem;">
@@ -422,43 +451,319 @@
             <a class="m-3 loadMore">Load More...</a>
           </div>
         </div>
-        <div class="col-3 border">
-          col-3
+        <div class="col-3 mt-5 mx-0 px-0">
+          <div class="tableAndUpdate px-0 mx-0 px-2 pb-4">
+            <table class="table stockTable mx-0" height="500" width="200">
+              <thead>
+                <tr class="tableHead">
+                  <th class="" style="width:30%">Symbol</th>
+                  <th class="" style="width:18%">High</th>
+                  <th class="" style="width:18%">Low</th>
+                  <th class="" style="width:17.5%">#</th>
+                  <th class="" style="width:17.5%">Open</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr class="">
+
+                  <td>SGX (Singapore Exchange <br />LTD)</td>
+                  <td>9.35</td>
+                  <td>9.27</td>
+                  <td>9.35</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br /> 9.31</td>
+                </tr>
+                <tr>
+                  <td>NIFTY IT</td>
+                  <td>30172.75</td>
+                  <td>29556.3008</td>
+                  <td>30163.1992</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/loss_icon.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <tr>
+                  <td>NIFTY METAL</td>
+                  <td>40811.65</td>
+                  <td>40167.7</td>
+                  <td>40563.85</td>
+                  <td class="text-center"><span><img class="mb-2" src="./Assets/profit.png" width="22rem"
+                        alt=""></span><br />29740.3496</td>
+                </tr>
+                <br>
+
+
+
+
+              </tbody>
+            </table>
+            <p class="latestUpdate mx-0"> * Latest Update till 30/Jan/2023</p>
+          </div>
         </div>
       </div>
+
     </div>
 
     <!-- Footer -->
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, a omnis? Laborum maxime asperiores nam libero
-      enim. Explicabo, sapiente nam! Impedit delectus dolor ex cumque officia quasi fugit accusamus voluptas corporis
-      quo incidunt atque consequuntur reiciendis animi, omnis repellendus illum expedita enim aliquid adipisci soluta.
-      Id deleniti quibusdam odit soluta quae esse sequi, autem veritatis fuga molestiae illum, saepe nemo quod, illo
-      ipsam deserunt animi adipisci officia aut est ut nesciunt optio aliquam eaque! Maxime iusto nulla tempore veniam,
-      ex error iste asperiores quasi ullam possimus, dolor reprehenderit aperiam commodi blanditiis minus magni voluptas
-      id nihil aliquam, autem cumque reiciendis voluptatum ab maiores. Distinctio in quae, perspiciatis, veniam nostrum
-      consectetur repudiandae voluptates deserunt numquam sapiente similique obcaecati debitis eum fugiat pariatur
-      corporis ipsa! Iusto cum ab amet laboriosam ut possimus eaque, distinctio natus quasi, commodi delectus, a quam
-      recusandae cupiditate! Enim fugiat perferendis aliquam, maxime modi ab nemo, amet fugit dolor magnam cum eos
-      cupiditate, assumenda asperiores cumque delectus nihil similique placeat quasi id consequatur quaerat? Delectus
-      accusantium pariatur nulla cupiditate placeat ea maxime natus distinctio, voluptatem eveniet quidem. Ex eveniet
-      mollitia cum, laboriosam quos quod porro nobis asperiores iure dolorum officia amet, nihil necessitatibus
-      reiciendis corrupti odit neque quam rerum facilis error! Blanditiis alias maiores quam libero, doloribus harum qui
-      impedit architecto reiciendis repudiandae iste quibusdam quod nam minima aliquam dolor sapiente voluptate
-      expedita? Molestias, quisquam quod. Voluptate nulla harum in dolorum illum qui assumenda, alias eligendi labore
-      minus maiores eius officia corporis eveniet impedit itaque modi asperiores totam, exercitationem voluptatum.
-      Tenetur minima quas exercitationem adipisci. Fugiat, repellendus illum officiis perferendis accusamus iste.
-      Laborum optio, aliquam dolore ipsum nulla quae quaerat omnis ab asperiores perferendis animi impedit earum
-      molestiae quidem libero, labore architecto nam fugit neque repudiandae inventore. Porro laboriosam totam libero
-      explicabo sunt ipsum dicta in illo consequatur. Repellendus aut, expedita, nobis fugit nesciunt magnam
-      perspiciatis excepturi, hic eos eum amet! Dicta quo fuga, consequatur molestias cum unde reprehenderit. Officiis,
-      dignissimos minus dolores odit, facilis provident nobis velit quo est harum eligendi ipsa accusamus veniam et,
-      dolorum nemo quae placeat hic aspernatur cum. Ut sapiente deleniti doloribus totam aspernatur animi rem,
-      perferendis ipsa ad accusamus, veniam harum pariatur odio exercitationem optio at nostrum qui hic iusto suscipit
-      quasi obcaecati similique maxime architecto. Blanditiis commodi enim provident rerum fugit? Officia sunt
-      exercitationem a, quam architecto nihil provident perferendis sequi, quas suscipit eligendi, possimus doloremque
-      maiores earum ab dolorum harum!</p>
-    <!-- Footer End -->
+    <div class="footer text-white">
+      <!-- Remove the container if you want to extend the Footer to full width. -->
+      <div class="">
+
+        <footer class="text-center text-lg-start mt-xl-5">
+          <div class="footerEmail footPic">
+            <!-- <div class=""> -->
+            <div class="text-center">
+              <div class="row align-items-start">
+                <div class="col ">
+                  <div class="invostockLogo-marketAnalysis text-start">
+                    <img src="./Assets/logo_footer.png" class="footerlogoImg" alt="">
+                    <p class="footerLogoText">
+                      Market Analysis. Build Wealth. Financial Literacy
+                    </p>
+
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="makeSureDiv text-start">
+                    <h1 class="makeSure">Make Sure you Don't <br> <span class="missed">Missed </span>Any Info</h1>
+
+                    <form class="form-floating border-0 px-0 mx-0">
+                      <input type="email"
+                        class=" px-0 mx-0 form-control rounded-0 bg-transparent text-white border-0 border-bottom emailInput"
+                        id="floatingInputInvalid" placeholder="name@example.com">
+                      <label class="emailLabels mx-0 px-0" for="floatingInputInvalid">Email Address</label>
+                      <button class="bg-transparent border-0 subscribeButton">Subscribe <span><img
+                            src="./Assets/right-arrow.png" class="ms-1" alt=""></span></button>
+                    </form>
+                    <p class="getInstantText">Get instant latest marketnews and updates.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- </div> -->
+          </div>
+
+          <!-- Grid container -->
+          <div class="container footerInfo">
+            <!--Grid row-->
+            <div class="row mt-5 px-5">
+              <!--Grid column-->
+              <div class="d-flex col-lg-6 col-md-12">
+                <div class="col-lg-4 col-md-6 knowUsCol ms-2">
+                  <h5 class="text-uppercase mb-2">KNOW US</h5>
+                  <ul class="list-unstyled mb-4">
+                    <li>
+                      <a href="#!" class="text-white">Home</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">About Us</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Refer & Earn Program</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 learningContentCol ms-2">
+                  <h5 class="text-uppercase mb-2">LEARNING CONTENT</h5>
+                  <ul class="list-unstyled mb-4">
+                    <li>
+                      <a href="#!" class="text-white">Stock Market Basics</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Option Trading Basics</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Chat Patterns</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Pivot Points</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">How to trade</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white"> Trading Strategy</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 financialToolsCol ms-2">
+                  <h5 class="text-uppercase mb-2">FINANCIAL TOOLS</h5>
+                  <ul class="list-unstyled mb-4">
+                    <li>
+                      <a href="#!" class="text-white">Portfolio Designer</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Market Forcasting Tool</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Strategy Builder</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex align-content-between col-lg-6 col-md-12">
+
+                <div class="col-lg-8 categoriesCol">
+                  <h5 class="text-uppercase mb-2">CATEGORIES</h5>
+                  <ul class="list-unstyled mb-4">
+                    <li>
+                      <a href="#!" class="text-white"> Stock Market</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Company and Finance</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Economy</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Commodity Markets</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">IPO</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Cryptocurrency</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 legalCol">
+                  <h5 class="text-uppercase mb-2">LEGAL</h5>
+                  <ul class="list-unstyled mb-4">
+                    <li>
+                      <a href="#!" class="text-white">Terms and Conditions</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Privacy & Policy</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Contact</a>
+                    </li>
+                    <li class="socialMediaIcons">
+                      <img src="./Assets/facebook_icon.png" alt="">
+                      <img src="./Assets/li_icon.png" alt="">
+                      <img src="Assets/youtube_icon.png" alt="">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center py-4 mt-4 border-top copyRight">
+            2023 © invoStock.com, All rights reserved
+          </div>
+          <!-- Copyright -->
+        </footer>
+
+      </div>
+      <!-- End of .container -->
+    </div>
 
 
   </div>

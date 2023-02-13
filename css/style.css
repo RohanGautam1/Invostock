@@ -2,14 +2,24 @@ body {
     font-family: Inter;
 }
 
+
 .bg-image {
     position: relative;
-    background-image: url('../Assets/back2.png');
+    background-image:
+    linear-gradient(to bottom right, #104441 4%, transparent 50% ),
+    url('../Assets/back2.png');
+    /* background-image:
+    linear-gradient(137deg, #104441 50%, #80808000 50%),
+    
+    url('../Assets/back2.png'); */
+    /* background-color:  ; */
+    /* background: linear-gradient(to bottom, #00BC40 0%, #4C3AE3 100%) */
+
     background-repeat: no-repeat;
     background-size: 110%;
     width: 100%;
     height: 40rem;
-    background-color: transparent linear-gradient(137deg) ;
+    opacity: 1;
 }
 
 .logoImg {
@@ -20,7 +30,7 @@ body {
 .header {
     position: absolute;
     width: 100%;
-    font-size: .75rem;
+    font-size: .8rem;
     font-weight: 300;
     /* py-3 px-4 */
     padding-left: 1.6rem;
@@ -45,7 +55,7 @@ body {
     list-style: none;
 }
 
-.headerLinks{
+.headerLinks {
     display: flex;
     flex-direction: column;
     justify-content: flex-start !important;
@@ -56,7 +66,7 @@ body {
     color: #FFFFFF;
     letter-spacing: 0px;
     font-weight: 700;
-    font-size:3rem;
+    font-size: 3rem;
     /* margin-left: .8rem; */
 }
 
@@ -100,7 +110,7 @@ body {
     border-radius: 1rem;
     padding-left: .9rem;
     padding-right: .9rem;
-    
+
 }
 
 .SignupBtn {
@@ -113,7 +123,7 @@ body {
     padding-right: .9rem;
 }
 
-.searchBtn{
+.searchBtn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,17 +148,19 @@ body {
     position: absolute;
     top: 17.2rem;
     left: .5rem;
-   
+
 }
 
 .nextDay {
     /* box-shadow: 0px 0px 2px #FFFFFF; */
+    /* background-color: #ffffff; */
+    /* background-color: #FFFFFF 0% 0% no-repeat padding-box !important; */
     border: 1px solid #FFFFFF30;
-    background: #ffffff00 !important;
     border-radius: 18px;
     opacity: 1;
-    backdrop-filter: blur(50px) !important;
+	backdrop-filter: blur(50px) !important;
     -webkit-backdrop-filter: blur(50px) !important;
+    /* opacity: .5; */
     width: 30rem;
     height: 15rem;
 }
@@ -157,7 +169,6 @@ body {
     /* box-shadow: 0px 0px 2px #FFFFFF; */
     border: 1px solid #FFFFFF30;
     background: #ffffff00 !important;
-    /* border: 1px solid #FFFFFF30; */
     border-radius: 18px;
     opacity: 1;
     backdrop-filter: blur(50px);
@@ -166,12 +177,12 @@ body {
     height: 15rem;
 }
 
-.graph{
+.graph {
     width: 27rem;
     height: 8.5rem;
 }
 
-.graphText{
+.graphText {
     font-size: .7rem;
     font-weight: 200;
 }
@@ -183,27 +194,28 @@ body {
 
 }
 
-.forcastText{
-    font-size: .7rem;
-    font-weight: 300;
-}
-.forcastData{
+.forcastText {
     font-size: .7rem;
     font-weight: 300;
 }
 
-.bullishBtn{
-    font-size: .8rem !important ;
+.forcastData {
+    font-size: .7rem;
+    font-weight: 300;
+}
+
+.bullishBtn {
+    font-size: .8rem !important;
     height: 2.7rem;
     width: 7rem;
     background-color: #00B074;
 }
 
-.dateVersionDiv{
+.dateVersionDiv {
     position: relative;
 }
 
-.modelVersion{
+.modelVersion {
     position: absolute;
     bottom: .1rem;
     right: .1rem;
@@ -212,29 +224,29 @@ body {
     width: 10rem;
 }
 
-.modelText{
+.modelText {
     text-decoration: underline;
 }
 
-.getAccessText{
+.getAccessText {
     font-size: .7rem;
     font-weight: 200;
 }
 
-.getfreeAccess{
+.getfreeAccess {
     color: #FCC954;
 }
 
-.freeAccessIcon{
+.freeAccessIcon {
     width: 5px;
 }
 
-.fa-angle-right{
+.fa-angle-right {
     color: #FCC954;
     padding-top: 2px;
 }
 
-.discover{
+.discover {
     position: absolute;
     top: 38rem;
     height: 3.3rem;
@@ -244,7 +256,7 @@ body {
     color: black !important;
 }
 
-.discoverTextDiv{
+.discoverTextDiv {
     display: flex;
     position: relative;
     background-color: #00B074;
@@ -252,24 +264,23 @@ body {
     height: 3.3rem;
 }
 
-.discoverText{
+.discoverText {
     position: absolute;
     left: 11rem;
     top: .8rem;
     font-weight: 500;
     font-size: 1.2rem;
-    color: #ffffff;   
+    color: #ffffff;
 }
 
-.discoverArrow{
+.discoverArrow {
     position: absolute;
     left: 18.2rem;
     /* bottom: -.9rem; */
     top: -1.15rem;
-    
 }
 
-.aroowIcon{
+.aroowIcon {
     /* position: absolute; */
     /* left: 1rem; */
     /* bottom: -.9rem; */
@@ -286,49 +297,46 @@ body {
     border-right: none;
     border-left: 20px solid #00b074;
     border-bottom: 26px solid transparent;
-  } 
+}
 
-
-.discoverLinksDiv{
+.discoverLinksDiv {
     position: absolute;
     height: 3.3rem;
     text-decoration: n;
     left: 26rem;
     /* margin-right: 9rem; */
     font-size: .8rem;
-
 }
 
-.discoverLinksRow{
+.discoverLinksRow {
     height: 3.3rem;
 }
 
-.discoverLinksDiv a{
+.discoverLinksDiv a {
     text-decoration: none;
 }
 
-.areYou{
+.areYou {
     font-weight: 700;
     font-size: .8rem;
 }
 
-.discoverLink{
+.discoverLink {
     font-weight: 700;
     font-size: .75rem;
     color: #4646A3;
 }
 
-.fa-angle-right{
+.fa-angle-right {
     color: #4646A3;
 }
 
-.learn
-{
+.learn {
     font-size: .4rem !important;
     font-weight: 500 !important;
 }
 
-.freeTradingMainDiv{
+.freeTradingMainDiv {
     margin-top: 5rem !important;
 }
 
@@ -344,9 +352,8 @@ body {
 .tradingDesc {
     line-height: 1.1rem;
     font-size: .8rem;
+    padding-right: 3rem;
 }
-
-
 
 @media (min-width: 992px) {
     .navbar-light {
@@ -367,9 +374,7 @@ body {
         padding-bottom: 1px;
         margin-top: 1 rem;
     }
-
 }
-
 
 /* Trading View */
 
@@ -383,7 +388,7 @@ body {
     box-shadow: 0px 0px 16px #00000029;
     border-radius: 23px;
     opacity: 1;
-    width: 12rem;
+    width: 12.5rem;
     height: 8rem;
 }
 
@@ -400,7 +405,6 @@ body {
     opacity: 1;
     line-height: .9rem;
     top: 4.5rem;
-
 }
 
 .payCardImg {
@@ -433,7 +437,6 @@ body {
     position: absolute;
 }
 
-
 .cardDiv {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
@@ -445,10 +448,8 @@ body {
     background-color: #DADAED;
     color: #5959AD !important;
     font-weight: 500;
-    font-size: .6rem;
+    font-size: .65rem;
     margin-bottom: .75rem;
-
-
 }
 
 .cardBody {
@@ -490,15 +491,34 @@ body {
     color: #242424;
     opacity: 1;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.crypto-text {
+    text-align: left;
+    color: #4646A3;
 
 }
 
+.crypto-body {
+    background-color: #DADAED;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.1rem !important;
+    padding-bottom: 0.1rem !important;
+    /* border-radius: 16px; */
+}
 
-/* Swiper css  start*/
+.card-body {
+    text-align: start;
+}
+
+/* Swiper css  end*/
+
 
 .swiper {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
 }
 
 .swiper-slide {
@@ -517,26 +537,209 @@ body {
     object-fit: cover;
 }
 
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: white;
+    outline: 2px solid #4646A3;
+}
 
-/* / slider / */
+.swiper-pagination-bullet-active {
+    color: #fff;
+    border: 1px solid white;
+    background: green;
+    outline: 2px solid #4646A3;
+}
 
-.crypto-text {
-    text-align: left;
+.swiperHeading {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.swiperPara {
+    font-size: .6rem;
+    margin-bottom: .6rem;
+}
+
+.mySwiper {
+    background-color: #ffffff !important;
+    box-shadow: 0px 3px 6px #00000029 !important;
+    /* width: .2rem; */
+    margin-left: 1rem;
+    width: 39.2rem !important;
+}
+
+.blockChainCard {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tableAndUpdate {
+    background-color: #F5F7F9 !important;
+}
+
+.tableHead {
+    font-size: .7rem;
     color: #4646A3;
+}
+
+.table-body {
+    font-size: .6rem;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.stockTable td {
+    font-weight: 500 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 0px !important;
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
+    padding-top: .8rem !important;
+    padding-bottom: .4rem !important;
+}
+
+.latestUpdate {
+    margin-bottom: 0px !important;
+    font-size: .7rem;
+    font-weight: 500;
+    color: #4646A3;
+}
+
+.footer {
+    width: 100%;
+    height: max-content;
+    background: #041A28 0% 0% no-repeat padding-box;
+}
+
+.footPic {
+    position: relative;
+    background: transparent url('../Assets/footer_image.png') 0% 0% no-repeat padding-box;
+    background-size: 100%;
+    width: 65%;
+    background-repeat: no-repeat;
+    height: 20rem;
+}
+
+.invostockLogo-marketAnalysis{
+    position: absolute;
+    left: 9rem;
+    top: 3rem;
+}
+
+.footerlogoImg{
+    width: 13rem;
+    height: 13rem;
+}
+
+.footerLogoText{
+    position: absolute;
+    width: 24rem;
+    font-size: .8rem;
+    font-weight: 200;
+    top: 10.5rem;
+    left: 1.5rem;
 
 }
 
-.crypto-body {
-    background-color: #DADAED;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.1rem !important;
-    padding-bottom: 0.1rem !important;
-    border-radius: 16px;
+.makeSureDiv{
+    position: absolute;
+    margin-left: 15rem;
+    margin-top: 4rem;
+    width: max-content;
+}
+.makeSure{
+    font-weight: 600 !important;
+    font-size: 2.5rem;
+    margin-bottom: 2.2rem;
 }
 
-.card-body {
-    text-align: start;
+.getInstantText{
+    margin-top: 1.4rem;
+    font-size: .7rem;
+    font-weight: 200;
+    color: #BCBCBC;
 }
 
-/* Swiper css  end*/
+.emailInput{
+    border-color: #707070 !important;
+    width: 120%;
+}
+
+.emailInput:focus   {
+    outline: none !important;
+    border: 1px solid #ffffff !important;
+    box-shadow: 0 0 10px transparent;
+}
+
+/* .input:focus {
+    border:1px solid red;
+  } */
+
+.emailLabels{
+    color: #ffffff !important;
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.subscribeButton{
+    position: absolute;
+    color: #FCC954;
+    font-size: .75rem;
+    font-weight: 500;
+    right: -5.2rem;
+    bottom: 1.15rem;
+}
+.subscribeButton img{
+    width: 1.3rem;
+}
+
+.form-floating>.form-control {
+    height: 3.4rem;
+}
+
+.footerInfo{
+    padding-left: 2.6rem;
+    padding-right: 2.6rem;
+}
+
+.footerInfo h5{
+    font-size: .75rem;
+    font-weight: 700;
+}
+.legalCol{
+    marker-start: 8rem;
+}
+
+.knowUsCol a, .learningContentCol a, .financialToolsCol a, .categoriesCol a, .legalCol a{
+    font-size: .7rem !important;
+    font-weight: 200;
+    text-decoration: none;
+    color: #BEBEBE;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.socialMediaIcons img{
+    width: 1.5rem;
+    margin-top: 1rem;
+}
+
+.copyRight{
+    border-color: #707070 !important;
+    color: #BEBEBE;
+    font-size: .7rem !important;
+    font-weight: 200;
+}
+
+.missed{
+    color: #FCC954;
+}
